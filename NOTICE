@@ -1,0 +1,17 @@
+trip-photo-skills
+Copyright 2026 dososo
+
+This product includes third-party software:
+
+three.js r186 (MIT License)
+  Copyright © 2010-2026 three.js authors
+  https://github.com/mrdoob/three.js
+  Vendored in skills/*/assets/runtime/vendor/three/ (license text included there)
+  and bundled into skills/trip-photo-lantern/assets/runtime/lantern.bundle.js
+  and skills/trip-photo-rubbing-scroll/assets/runtime/scroll.bundle.js.
+
+The following is downloaded at run time by trip-photo-lantern and is not redistributed in this repository:
+
+openmmlab/upernet-convnext-tiny (MIT License)
+  https://huggingface.co/openmmlab/upernet-convnext-tiny
+  Semantic segmentation weights (UperNet + ConvNeXt-T, trained on ADE20K).

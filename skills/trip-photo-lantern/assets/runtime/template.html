@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="generator" content="trip-photo-lantern">
+<title>{{TITLE}}</title>
+<style>
+  :root {
+    --night: #0d0a08;
+    --paper: #f1e4c8;
+    --paper-dim: #cdbb98;
+    --amber: #e9a648;
+    --cinnabar: #b23a2e;
+    --serif: "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif CJK SC", "Noto Serif SC", "SimSun", serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; background: var(--night); color: var(--paper);
+    font-family: var(--serif); -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+  #c { position: fixed; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
+  #c.dragging { cursor: grabbing; }
+  .ui { position: fixed; pointer-events: none; text-shadow: 0 2px 14px rgba(0, 0, 0, 0.65); }
+  #title { left: max(20px, env(safe-area-inset-left)); top: max(18px, env(safe-area-inset-top)); }
+  #title b { display: block; font-weight: 500; font-size: 18px; letter-spacing: 0.14em; }
+  #title span { display: block; margin-top: 6px; font-size: 12px; letter-spacing: 0.22em; color: var(--amber); }
+  #place { left: max(22px, env(safe-area-inset-left)); top: 28%; display: flex; flex-direction: row-reverse; gap: 8px; opacity: 0; }
+  #place .seal { display: block; width: 13px; height: 13px; margin: 0 auto 10px; background: var(--cinnabar); }
+  #placeName { writing-mode: vertical-rl; font-size: 21px; letter-spacing: 0.14em; }
+  #placeDate { writing-mode: vertical-rl; margin-top: 23px; font-size: 12px; letter-spacing: 0.18em; color: var(--paper-dim); }
+  #cap { left: 16px; right: 16px; top: 13%; text-align: center; font-size: clamp(17px, 4.4vw, 26px); letter-spacing: 0.06em; opacity: 0; }
+  #hint { left: 16px; right: 16px; bottom: max(26px, env(safe-area-inset-bottom)); text-align: center; font-size: 13px;
+    letter-spacing: 0.22em; color: var(--paper-dim); transition: opacity 0.8s ease; }
+  #msg { left: 16px; right: 16px; top: 47%; text-align: center; font-size: 15px; letter-spacing: 0.2em; color: var(--paper-dim); }
+</style>
+</head>
+<body>
+<canvas id="c" role="img" aria-label="一盏走马灯：内筒剪纸是旅行照片的天际线，烛光把影子投在四面墙上"></canvas>
+<div id="title" class="ui"><b>{{TITLE}}</b><span>{{SUBTITLE}}</span></div>
+<div id="place" class="ui" aria-hidden="true"><div><span class="seal"></span><div id="placeName"></div></div><div id="placeDate"></div></div>
+<div id="cap" class="ui" aria-live="polite"></div>
+<div id="hint" class="ui">拖动转灯 · 点墙上的影子，看原来那张照片</div>
+<div id="msg" class="ui">点灯中…</div>
+<script>window.LANTERN_DATA = {{DATA}};</script>
+<script>{{BUNDLE}}</script>
+</body>
+</html>

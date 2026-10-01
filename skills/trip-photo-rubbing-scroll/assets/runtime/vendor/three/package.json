@@ -1,0 +1,8 @@
+{
+  "name": "three",
+  "version": "0.186.1",
+  "license": "MIT",
+  "type": "module",
+  "main": "./build/three.module.js",
+  "module": "./build/three.module.js"
+}

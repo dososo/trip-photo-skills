@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="generator" content="trip-photo-rubbing-scroll">
+<title>{{TITLE}}</title>
+<style>
+  :root {
+    --night: #0d0a08;
+    --paper: #f1e4c8;
+    --paper-dim: #cdbb98;
+    --amber: #e9a648;
+    --cinnabar: #b23a2e;
+    --serif: "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif CJK SC", "Noto Serif SC", "SimSun", serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100%; height: 100%; overflow: hidden; color: var(--paper); font-family: var(--serif);
+    background: radial-gradient(120% 70% at 50% 50%, #241b14 0%, #120d0a 55%, #080605 100%) var(--night);
+    -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+  #c { position: fixed; inset: 0; width: 100%; height: 100%; display: block; cursor: crosshair; touch-action: none; }
+  .ui { position: fixed; pointer-events: none; text-shadow: 0 2px 14px rgba(0, 0, 0, 0.65); }
+  #title { left: max(20px, env(safe-area-inset-left)); top: max(18px, env(safe-area-inset-top)); }
+  #title b { display: block; font-weight: 500; font-size: 18px; letter-spacing: 0.14em; }
+  #title span { display: block; margin-top: 6px; font-size: 12px; letter-spacing: 0.22em; color: var(--amber); }
+  #place { left: 16px; right: 16px; text-align: center; font-size: 15px; letter-spacing: 0.18em; color: var(--paper-dim); }
+  #hint { left: 16px; right: 16px; bottom: max(26px, env(safe-area-inset-bottom)); text-align: center; font-size: 13px;
+    letter-spacing: 0.2em; color: var(--paper-dim); transition: opacity 0.8s ease; }
+  #msg { left: 16px; right: 16px; top: 47%; text-align: center; font-size: 15px; letter-spacing: 0.2em; color: var(--paper-dim); }
+  .nav { position: fixed; width: 44px; height: 56px; border: 0; background: rgba(13, 10, 8, 0.55); color: var(--paper);
+    font-size: 26px; line-height: 56px; text-align: center; cursor: pointer; border-radius: 6px; font-family: var(--serif); }
+  #prev { left: max(6px, env(safe-area-inset-left)); }
+  #next { right: max(6px, env(safe-area-inset-right)); }
+  #reset { position: fixed; right: max(16px, env(safe-area-inset-right)); top: max(16px, env(safe-area-inset-top)); border: 1px solid rgba(205, 187, 152, 0.5);
+    background: transparent; color: var(--paper-dim); font-family: var(--serif); font-size: 13px; letter-spacing: 0.16em; padding: 6px 12px; border-radius: 4px; cursor: pointer; }
+  #seals { position: fixed; inset: 0; pointer-events: none; }
+  .seal { position: absolute; left: 0; top: 0; width: 116px; height: 116px; border-radius: 8px; background: var(--cinnabar); opacity: 0;
+    box-shadow: inset 0 0 0 5px var(--cinnabar), inset 0 0 0 7px rgba(244, 231, 207, 0.9), 0 3px 10px rgba(0, 0, 0, 0.35);
+    display: flex; flex-direction: row-reverse; justify-content: center; align-items: center; gap: 4px; transform-origin: 50% 50%; overflow: hidden; }
+  .seal span { display: block; writing-mode: vertical-rl; font-family: var(--serif); font-weight: 600; color: #f4e7cf; line-height: 1.02; }
+  .seal .p { font-size: 34px; }
+  .seal .p3 { font-size: 26px; }
+  .seal .d { font-size: 21px; }
+  .seal i { position: absolute; inset: 0; background: url("{{GRAIN}}") center / 160px 160px; mix-blend-mode: multiply; opacity: 0.9; }
+</style>
+</head>
+<body>
+<canvas id="c" role="img" aria-label="一卷墨黑的拓片：用手指擦，旅行照片像碑拓一样显出来，再晕回彩色"></canvas>
+<div id="seals"></div>
+<div id="title" class="ui"><b>{{TITLE}}</b><span>{{SUBTITLE}}</span></div>
+<div id="place" class="ui"></div>
+<div id="hint" class="ui">用手指擦一擦 · 两指或滚轮翻卷</div>
+<div id="msg" class="ui">展卷中…</div>
+<button id="prev" class="nav" aria-label="往左展开，下一段">‹</button>
+<button id="next" class="nav" aria-label="往右，上一段">›</button>
+<button id="reset" aria-label="重新拓一遍">重拓</button>
+<script>window.SCROLL_DATA = {{DATA}};</script>
+<script>{{BUNDLE}}</script>
+</body>
+</html>
