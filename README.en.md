@@ -44,3 +44,11 @@ The scripts never upload photos. If you ask an AI agent to look at an image, tha
 ## License
 
 Code: [Apache-2.0](LICENSE). Example photos and images derived from them: © dososo, not covered by the code license; see [ASSET-LICENSE.md](ASSET-LICENSE.md). Third-party components: [NOTICE](NOTICE).
+
+## Author
+
+**爆裂队长 NEXT (BLCaptain)**
+
+- GitHub: [dososo](https://github.com/dososo)
+- X: [@thinkszyg](https://x.com/thinkszyg)
+- Email: [blteam2026@outlook.com](mailto:blteam2026@outlook.com)

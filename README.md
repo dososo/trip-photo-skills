@@ -74,6 +74,10 @@ npx skills add dososo/trip-photo-skills --skill trip-photo-rubbing-scroll
 - 示例照片及其衍生图：© dososo，不在代码许可范围内，见 [ASSET-LICENSE.md](ASSET-LICENSE.md)
 - 第三方组件：见 [NOTICE](NOTICE)
 
-## 演示
+## 作者
 
-抖音 @爆裂队长NEXT ·「我有一座园」01 走马灯、02 拓片长卷
+**爆裂队长 NEXT（BLCaptain）**
+
+- GitHub：[dososo](https://github.com/dososo)
+- X：[@thinkszyg](https://x.com/thinkszyg)
+- 邮箱：[blteam2026@outlook.com](mailto:blteam2026@outlook.com)
