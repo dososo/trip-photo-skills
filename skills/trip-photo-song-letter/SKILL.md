@@ -83,7 +83,7 @@ python3 scripts/episode.py facts --photos "<照片文件夹>" --out "<输出文�
 6. 正文最多 9 行，每行最多 17 个字；落款就是地名。
 7. 写完给用户过目，用户改过再用。
 
-格式照 `examples/xiangxi-2024/episode.json` 里的 `letter` 字段。
+格式照样例里的 `letter` 字段：`examples/xiangxi-2024/fenghuang/episode.json`（凤凰古城）、`examples/xiangxi-2024/chadong/episode.json`（边城茶峒）。
 
 ## 第 4 步：画（可选：小人回到照片里）
 
@@ -121,7 +121,7 @@ python3 scripts/episode.py facts --photos "<照片文件夹>" --out "<输出文�
 
 ## 第 6 步：写配置
 
-复制 `examples/xiangxi-2024/episode.json` 到 `<输出文件夹>/work/episode.json`，按 `references/episode-config.md` 逐项改。路径都相对于 `work/`。改完先校验：
+复制一份样例到 `<输出文件夹>/work/episode.json`，按 `references/episode-config.md` 逐项改：主歌画面是横图，复制 `examples/xiangxi-2024/fenghuang/episode.json`；是竖图，复制 `examples/xiangxi-2024/chadong/episode.json`（带每个音一粒光）。路径都相对于 `work/`。改完先校验：
 
 ```bash
 python3 scripts/episode.py validate --out "<输出文件夹>"

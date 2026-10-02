@@ -1,6 +1,6 @@
 # episode.json 字段
 
-配置放在 `<输出文件夹>/work/episode.json`，所有路径都相对于 `work/`。从 `examples/xiangxi-2024/episode.json` 复制一份改。改完先校验：`python3 scripts/episode.py validate --out <输出文件夹>`。
+配置放在 `<输出文件夹>/work/episode.json`，所有路径都相对于 `work/`。从样例复制一份改：主歌是横图用 `examples/xiangxi-2024/fenghuang/episode.json`，竖图用 `examples/xiangxi-2024/chadong/episode.json`。改完先校验：`python3 scripts/episode.py validate --out <输出文件夹>`。
 
 歌（`work/song.json`、`<输出文件夹>/song.wav`）、写歌照片（`work/melody.jpg`）和它的山脊（`work/ridge.npy`）由前面几步固定生成，配置里不用写；成片固定是 `<输出文件夹>/episode.mp4`。
 

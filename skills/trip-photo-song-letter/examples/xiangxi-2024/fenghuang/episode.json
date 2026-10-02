@@ -1,0 +1,96 @@
+{
+  "schema_version": "1",
+  "hook": {
+    "title": "凤凰的屋檐，写了一首歌",
+    "subtitle": "屋檐有多高，音就有多高"
+  },
+  "scenes": {
+    "verse": {
+      "image": "gen/verse.png",
+      "pan": [
+        0.0,
+        0.25
+      ]
+    },
+    "chorus": {
+      "image": "gen/chorus.png",
+      "ridge": "chorus_ridge.npy",
+      "pan": [
+        1.0,
+        0.35
+      ]
+    },
+    "ending": {
+      "image": "gen/ending.png",
+      "focus": [
+        0.5,
+        0.72
+      ]
+    }
+  },
+  "captions": [
+    {
+      "text": "你在我这儿，拍了二百一十三张照片。",
+      "section": "verse",
+      "at": 2.0,
+      "until": 6.6,
+      "slot": 0
+    },
+    {
+      "text": "我是凤凰。",
+      "section": "verse",
+      "at": 4.0,
+      "until": 6.6,
+      "slot": 1
+    },
+    {
+      "text": "夜里八点，你第一次对着我按下快门。",
+      "section": "verse",
+      "at": 7.0,
+      "slot": 0
+    },
+    {
+      "text": "早上七点四十，你又来拍我的马头墙。",
+      "section": "chorus",
+      "at": 1.0,
+      "slot": 0
+    },
+    {
+      "text": "这一段，把屋檐倒着唱回来",
+      "section": "chorus",
+      "at": 4.5,
+      "slot": 1
+    },
+    {
+      "text": "你走的那天下午，",
+      "section": "bridge",
+      "at": 0.6,
+      "slot": 0
+    },
+    {
+      "text": "沱江的水和平常一样，慢慢地流。",
+      "section": "climax",
+      "at": 0.4,
+      "slot": 1
+    }
+  ],
+  "letter": {
+    "to": "致 拍了我二百一十三张照片的你",
+    "body": [
+      "你好，我是凤凰。",
+      "夜里八点，你第一次对着我按下快门，",
+      "那一晚，一共拍了二十五张。",
+      "第二天早上七点四十，你又来了，",
+      "抬头拍我的马头墙。",
+      "你走的那天下午，",
+      "沱江的水和平常一样，",
+      "慢慢地流。"
+    ],
+    "sign": "凤凰古城",
+    "postmark": "凤凰",
+    "date": "2024.09.29",
+    "stamp": "photos/night.jpg",
+    "ps": "随信附上：凤凰的屋檐写的歌"
+  },
+  "tag": "一张画 · 一首歌 · 一封信"
+}

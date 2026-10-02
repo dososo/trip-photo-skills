@@ -77,7 +77,7 @@ npx skills add dososo/trip-photo-skills --skill trip-photo-song-letter
   python3 scripts/episode.py song --from 0.1 --to 0.9 --out ~/Desktop/song
   ```
 
-- 示例：[`examples/xiangxi-2024/episode.mp4`](skills/trip-photo-song-letter/examples/xiangxi-2024/episode.mp4)（边城茶峒，2024 年 10 月），信和字幕在同目录的 `episode.json`。
+- 示例：[`examples/xiangxi-2024/fenghuang/episode.mp4`](skills/trip-photo-song-letter/examples/xiangxi-2024/fenghuang/episode.mp4)（凤凰古城，马头墙写的歌）、[`examples/xiangxi-2024/chadong/episode.mp4`](skills/trip-photo-song-letter/examples/xiangxi-2024/chadong/episode.mp4)（边城茶峒，山脊写的歌），2024 年国庆；信和字幕在各自目录的 `episode.json`。
 - 原理：分割模型找到天空，再沿亮度梯度用动态规划逐列找真实的山脊边缘；旋律只由山脊起伏和固定的乐理规则决定（强拍取和弦音、偏爱级进、乐句落在规定的音上）。细节见 [pipeline.md](skills/trip-photo-song-letter/references/pipeline.md)。
 
 ## 常见问题

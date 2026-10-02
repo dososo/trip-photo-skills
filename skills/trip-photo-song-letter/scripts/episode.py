@@ -159,7 +159,7 @@ def cmd_song(a) -> None:
 def load_config(o: Path, w: Path, name: str = "episode.mp4") -> dict:
     p = w / "episode.json"
     if not p.exists():
-        die(f"没有 {p}：复制 examples/xiangxi-2024/episode.json 过去，按 references/episode-config.md 改")
+        die(f"没有 {p}：复制 examples/xiangxi-2024/fenghuang/episode.json（主歌横图）或 chadong/episode.json（主歌竖图）过去，按 references/episode-config.md 改")
     try:
         cfg = json.loads(p.read_text(encoding="utf-8"))
     except json.JSONDecodeError as e:
