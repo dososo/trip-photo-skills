@@ -1,6 +1,6 @@
 # trip-photo-skills
 
-Turn trip photos into small Chinese objects you can play with. 01: a revolving lantern (走马灯). 02: an ink-rubbing handscroll (拓片长卷) — rub the black paper with a finger and the photo appears like a stone rubbing, then bleeds back into color; each finished section gets a cinnabar seal. Install it with `npx skills add dososo/trip-photo-skills --skill trip-photo-rubbing-scroll`; it needs only Pillow and numpy.
+Turn trip photos into small Chinese objects you can play with and listen to. 01: a revolving lantern (走马灯). 02: an ink-rubbing handscroll (拓片长卷) — rub the black paper with a finger and the photo appears like a stone rubbing, then bleeds back into color; each finished section gets a cinnabar seal. Install it with `npx skills add dososo/trip-photo-skills --skill trip-photo-rubbing-scroll`; it needs only Pillow and numpy. 03: a drawing, a song, a letter (一张画 · 一首歌 · 一封信) — a short vertical video in which the melody is read from the ridge or roofline in one photo (the higher the ridge, the higher the note) and arranged for a small band, a tiny hand-drawn traveler steps into the photos (optional; uses your own image-generation account), and the place writes you a short letter using only the times and counts from your photos. Install it with `npx skills add dososo/trip-photo-skills --skill trip-photo-song-letter`; it needs Python, ffmpeg and about 290 MB of free instrument samples (CC0) and fonts (OFL), downloaded on first use.
 
 [中文](README.md) · English
 

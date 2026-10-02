@@ -15,3 +15,16 @@ The following is downloaded at run time by trip-photo-lantern and is not redistr
 openmmlab/upernet-convnext-tiny (MIT License)
   https://huggingface.co/openmmlab/upernet-convnext-tiny
   Semantic segmentation weights (UperNet + ConvNeXt-T, trained on ADE20K).
+
+The following are downloaded at run time by trip-photo-song-letter (`python3 scripts/episode.py fetch`) and are not redistributed in this repository:
+
+VSCO 2 Community Edition (CC0 1.0)
+  https://github.com/sgossner/VSCO-2-CE
+  Orchestral samples by Versilian Studios; the upright piano was sampled by Simon Dalzell of Ivy Audio.
+  Credit is encouraged by the authors, not required.
+
+LXGW WenKai / 霞鹜文楷 v1.522 (SIL Open Font License 1.1)
+  https://github.com/lxgw/LxgwWenKai
+  Used to render captions and letters into video frames.
+
+openmmlab/upernet-convnext-tiny (MIT License) is also used by trip-photo-song-letter for sky and person segmentation.

@@ -1,0 +1,106 @@
+{
+  "schema_version": "1",
+  "hook": {
+    "title": "茶峒的山，写了一首歌",
+    "subtitle": "山脊有多高，音就有多高"
+  },
+  "scenes": {
+    "verse": {
+      "image": "gen/verse.png",
+      "focus": [
+        0.5,
+        0.58
+      ],
+      "particles": {
+        "from": [
+          0.525,
+          0.705
+        ],
+        "to": [
+          0.566,
+          0.787
+        ]
+      }
+    },
+    "chorus": {
+      "image": "gen/chorus.png",
+      "ridge": "chorus_ridge.npy",
+      "pan": [
+        1.0,
+        0.357
+      ]
+    },
+    "ending": {
+      "image": "gen/ending.png",
+      "focus": [
+        0.55,
+        0.72
+      ]
+    }
+  },
+  "captions": [
+    {
+      "text": "你在我这儿，拍了一百七十八张照片。",
+      "section": "verse",
+      "at": 2.0,
+      "until": 6.6,
+      "slot": 0
+    },
+    {
+      "text": "我是茶峒。",
+      "section": "verse",
+      "at": 4.0,
+      "until": 6.6,
+      "slot": 1
+    },
+    {
+      "text": "傍晚六点四十七分，你拍了那盏竹编灯笼——",
+      "section": "verse",
+      "at": 7.0,
+      "slot": 0
+    },
+    {
+      "text": "天刚变蓝，灯刚亮。",
+      "section": "verse",
+      "at": 9.0,
+      "slot": 1
+    },
+    {
+      "text": "这一段，把山脊倒着唱回来",
+      "section": "chorus",
+      "at": 1.0,
+      "slot": 0
+    },
+    {
+      "text": "第二天中午，你拍下最后一张。",
+      "section": "bridge",
+      "at": 0.6,
+      "slot": 0
+    },
+    {
+      "text": "河还是那条河，灯每天都还亮着。",
+      "section": "climax",
+      "at": 0.4,
+      "slot": 1
+    }
+  ],
+  "letter": {
+    "to": "致 拍了我一百七十八张照片的你",
+    "body": [
+      "你好，我是茶峒。",
+      "十月三号下午四点多，你第一次拍我。",
+      "傍晚六点四十七分，你站在屋檐下，",
+      "拍了那盏竹编灯笼——",
+      "天刚变蓝，灯刚亮。",
+      "第二天中午，你拍下最后一张。",
+      "河还是那条河，",
+      "灯每天都还亮着。"
+    ],
+    "sign": "边城茶峒",
+    "postmark": "茶峒",
+    "date": "2024.10.03",
+    "stamp": "photos/lantern.jpg",
+    "ps": "随信附上：茶峒的山写的歌"
+  },
+  "tag": "一张画 · 一首歌 · 一封信"
+}
